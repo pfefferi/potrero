@@ -1041,3 +1041,196 @@
 .photo-thumb:hover .photo-delete {
   opacity: 1;
 }
+
+/* ── Guía Stats & Progress ── */
+.guia-stats {
+  margin-bottom: 0.5rem;
+}
+
+.stats-bar {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stat-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.stat-total {
+  background: var(--bg);
+  color: var(--text-secondary);
+}
+
+.stat-vistos {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.stat-pct {
+  background: var(--primary);
+  color: white;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* ── Guía Filters ── */
+.guia-filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.filtro-btn {
+  padding: 0.4rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  align-self: flex-start;
+}
+
+.filtro-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.ambiente-filtros {
+  display: flex;
+  gap: 0.3rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.25rem;
+}
+
+.ambiente-btn {
+  padding: 0.3rem 0.6rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  cursor: pointer;
+  white-space: nowrap;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.ambiente-btn.active {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ── Tab Count Badge ── */
+.tab-count {
+  font-size: 0.6rem;
+  background: rgba(0,0,0,0.15);
+  padding: 0.05rem 0.3rem;
+  border-radius: 2px;
+  margin-left: 0.25rem;
+}
+
+.app.oscuro .tab-count {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ── Species Card with Check ── */
+.especie-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+}
+
+.especie-card.visto {
+  opacity: 0.6;
+  background: var(--primary-light);
+  border-color: var(--primary);
+}
+
+.app.oscuro .especie-card.visto {
+  opacity: 0.5;
+}
+
+.especie-check {
+  flex-shrink: 0;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.1rem;
+}
+
+.check-icon {
+  font-size: 1rem;
+}
+
+.especie-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.especie-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.especie-ambiente {
+  font-size: 0.65rem;
+  background: var(--bg);
+  color: var(--text-muted);
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+}
+
+/* ── Guía Actions ── */
+.guia-actions {
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirm-clear {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--danger);
+}
+
+.resultados-count {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}

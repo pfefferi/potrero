@@ -1,13 +1,14 @@
 // Simple IndexedDB wrapper for potrero field entries + photos
 const DB_NAME = 'potrero-db';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 const STORE_ENTRIES = 'entries';
 const STORE_PHOTOS = 'photos';
+const STORE_CHECKLIST = 'checklist';
 
 function openDB() {
   return new Promise((resolve, reject) => {
     const req = indexedDB.open(DB_NAME, DB_VERSION);
-    req.onupgradeneeded = () => {
+    req.onupgradeneeded = (event) => {
       const db = req.result;
       if (!db.objectStoreNames.contains(STORE_ENTRIES)) {
         const store = db.createObjectStore(STORE_ENTRIES, { keyPath: 'id' });
@@ -17,6 +18,9 @@ function openDB() {
       if (!db.objectStoreNames.contains(STORE_PHOTOS)) {
         const store = db.createObjectStore(STORE_PHOTOS, { keyPath: 'id' });
         store.createIndex('entryId', 'entryId', { unique: false });
+      }
+      if (!db.objectStoreNames.contains(STORE_CHECKLIST)) {
+        db.createObjectStore(STORE_CHECKLIST);
       }
     };
     req.onsuccess = () => resolve(req.result);
@@ -105,5 +109,45 @@ export async function photoToUrl(photo) {
   return new Promise((resolve) => {
     const url = URL.createObjectURL(photo.blob);
     resolve(url);
+  });
+}
+
+// ── Checklist ──
+// Key: "{grupo}:{index}" → { visto: true, timestamp: "..." }
+export async function getChecklist() {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE_CHECKLIST, 'readonly');
+    const req = tx.objectStore(STORE_CHECKLIST).getAll();
+    req.onsuccess = () => {
+      const result = {};
+      req.result.forEach(item => { result[item.key] = item.value; });
+      resolve(result);
+    };
+    req.onerror = () => reject(req.error);
+  });
+}
+
+export async function toggleChecklistItem(key, value) {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE_CHECKLIST, 'readwrite');
+    if (value) {
+      tx.objectStore(STORE_CHECKLIST).put(value, key);
+    } else {
+      tx.objectStore(STORE_CHECKLIST).delete(key);
+    }
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+export async function clearChecklist() {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE_CHECKLIST, 'readwrite');
+    tx.objectStore(STORE_CHECKLIST).clear();
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
   });
 }
