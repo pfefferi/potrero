@@ -1119,31 +1119,7 @@
   border-color: var(--primary);
 }
 
-.ambiente-filtros {
-  display: flex;
-  gap: 0.3rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 0.25rem;
-}
 
-.ambiente-btn {
-  padding: 0.3rem 0.6rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  font-size: 0.72rem;
-  cursor: pointer;
-  white-space: nowrap;
-  color: var(--text-secondary);
-  transition: all 0.2s;
-}
-
-.ambiente-btn.active {
-  background: var(--primary-light);
-  color: var(--primary);
-  border-color: var(--primary);
-}
 
 /* ── Tab Count Badge ── */
 .tab-count {
@@ -1205,13 +1181,7 @@
   flex-wrap: wrap;
 }
 
-.especie-ambiente {
-  font-size: 0.65rem;
-  background: var(--bg);
-  color: var(--text-muted);
-  padding: 0.1rem 0.4rem;
-  border-radius: 2px;
-}
+
 
 /* ── Guía Actions ── */
 .guia-actions {

@@ -18,23 +18,9 @@ const grupos = {
   exoticos: { icon: '🦚', titulo: 'Exóticos', lista: exoticosData },
 };
 
-const ambientes = ['protegido', 'eucalipto-joven', 'eucalipto-intermedio', 'eucalipto-maduro'];
-const ambientesLabels = {
-  'protegido': '🌳 Protegido',
-  'eucalipto-joven': '🌱 Euc. joven',
-  'eucalipto-intermedio': '🌲 Euc. interm.',
-  'eucalipto-maduro': '🌿 Euc. maduro',
-};
-
-function getEnvKey(especie) {
-  // Use env if tagged, otherwise default to 'protegido' (most common)
-  return especie.ambiente || 'protegido';
-}
-
 export default function Guia() {
   const [grupoActivo, setGrupoActivo] = useState('aves');
   const [busqueda, setBusqueda] = useState('');
-  const [filtroAmbiente, setFiltroAmbiente] = useState('');
   const [mostrarSoloNoVistos, setMostrarSoloNoVistos] = useState(false);
   const [checklist, setChecklist] = useState({});
   const [showClearConfirm, setShowClearConfirm] = useState(false);
@@ -90,17 +76,14 @@ export default function Guia() {
           return false;
         }
       }
-      // Environment filter
-      if (filtroAmbiente && getEnvKey(especie) !== filtroAmbiente) {
-        return false;
-      }
+
       // "Only unseen" filter
       if (mostrarSoloNoVistos && checklist[`${grupoKey}:${especie.index}`]) {
         return false;
       }
       return true;
     });
-  }, [grupo, busqueda, filtroAmbiente, mostrarSoloNoVistos, checklist, grupoKey]);
+  }, [grupo, busqueda, mostrarSoloNoVistos, checklist, grupoKey]);
 
   // Sort: unseen first
   const ordenadas = useMemo(() => {
@@ -149,24 +132,6 @@ export default function Guia() {
         >
           {mostrarSoloNoVistos ? '👁️ Solo no vistas' : '🔲 Solo no vistas'}
         </button>
-
-        <div className="ambiente-filtros">
-          <button
-            className={`ambiente-btn ${filtroAmbiente === '' ? 'active' : ''}`}
-            onClick={() => setFiltroAmbiente('')}
-          >
-            Todos
-          </button>
-          {ambientes.map(a => (
-            <button
-              key={a}
-              className={`ambiente-btn ${filtroAmbiente === a ? 'active' : ''}`}
-              onClick={() => setFiltroAmbiente(filtroAmbiente === a ? '' : a)}
-            >
-              {ambientesLabels[a]}
-            </button>
-          ))}
-        </div>
       </div>
 
       <div className="grupo-tabs">
@@ -178,7 +143,7 @@ export default function Guia() {
             <button
               key={key}
               className={`grupo-tab ${key === grupoActivo ? 'active' : ''}`}
-              onClick={() => { setGrupoActivo(key); setBusqueda(''); setFiltroAmbiente(''); setMostrarSoloNoVistos(false); }}
+              onClick={() => { setGrupoActivo(key); setBusqueda(''); setMostrarSoloNoVistos(false); }}
             >
               {g.icon} {g.titulo} {v > 0 && <span className="tab-count">{v}/{g.lista.length}</span>}
             </button>
@@ -234,9 +199,6 @@ export default function Guia() {
                     )}
                     <div className="especie-meta">
                       {especie.notas && <span className="especie-notas">{especie.notas}</span>}
-                      {especie.ambiente && (
-                        <span className="especie-ambiente">{ambientesLabels[especie.ambiente] || especie.ambiente}</span>
-                      )}
                     </div>
                   </div>
                 </div>
