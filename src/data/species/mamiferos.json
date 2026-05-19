@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Aguará popé",
+    "nombreCient": "Conepatus chinga",
+    "notas": "Guía p.97, 116"
+  },
+  {
+    "nombre": "Carpincho",
+    "nombreCient": "Cavia aperea",
+    "notas": "Guía p.98, 116"
+  },
+  {
+    "nombre": "Coipo",
+    "nombreCient": "Ctenomys torquatus",
+    "notas": "Guía p.99"
+  },
+  {
+    "nombre": "Comadreja colorada",
+    "nombreCient": "Didelphis albiventris",
+    "notas": "Guía p.95"
+  },
+  {
+    "nombre": "Comadreja overa",
+    "nombreCient": "Galictis cuja",
+    "notas": "Guía p.95"
+  },
+  {
+    "nombre": "Comadrejita enana común",
+    "nombreCient": "Lutreolina crassicaudata",
+    "notas": "Guía p.95"
+  },
+  {
+    "nombre": "Cuis",
+    "nombreCient": "Hydrochoerus hydrochaeris",
+    "notas": "Guía p.98"
+  },
+  {
+    "nombre": "Gato montés",
+    "nombreCient": "Leopardus geoffroyi",
+    "notas": "Guía p.97, 116"
+  },
+  {
+    "nombre": "Gualacate",
+    "nombreCient": "Cerdocyon thous",
+    "notas": "Guía p.96"
+  },
+  {
+    "nombre": "Guazuncho",
+    "nombreCient": "Lagostomus maximus",
+    "notas": "Guía p.98"
+  },
+  {
+    "nombre": "Hurón menor",
+    "nombreCient": "Thylamys pusillus",
+    "notas": "Guía p.95"
+  },
+  {
+    "nombre": "Lobito de río",
+    "nombreCient": "Lontra longicaudis",
+    "notas": "Guía p.97"
+  },
+  {
+    "nombre": "Mulita grande",
+    "nombreCient": "Dasypus novemcinctus",
+    "notas": "Guía p.96, 117"
+  },
+  {
+    "nombre": "Puma",
+    "nombreCient": "Herpailurus yaguaroundi",
+    "notas": "Guía p.99"
+  },
+  {
+    "nombre": "Tuco-tuco",
+    "nombreCient": "Myocastor coypus",
+    "notas": "Guía p.99"
+  },
+  {
+    "nombre": "Vizcacha",
+    "nombreCient": "Mazama gouazoubira",
+    "notas": "Guía p.98"
+  },
+  {
+    "nombre": "Yaguaroundí",
+    "nombreCient": "Puma concolor",
+    "notas": "Guía p.99"
+  },
+  {
+    "nombre": "Zorrino",
+    "nombreCient": "Procyon cancrivorus",
+    "notas": "Guía p.97, 117"
+  },
+  {
+    "nombre": "Zorro de monte",
+    "nombreCient": "Euphractus sexcinctus",
+    "notas": "Guía p.96, 117"
+  },
+  {
+    "nombre": "Zorro gris",
+    "nombreCient": "Lycalopex gymnocercus",
+    "notas": "Guía p.96"
+  }
+]

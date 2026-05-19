@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "titulo": "Diversidad de hormigas en gradientes de eucalipto",
+    "hipotesis": "La diversidad de hormigas varía según el grado de intervención del bosque nativo por plantaciones de eucalipto.",
+    "metodo": "Muestreo con trampas de caída en los 4 ambientes. Identificación de géneros con clave dicotómica.",
+    "datos": "Género, subfamilia, abundancia, ambiente, fecha"
+  },
+  {
+    "id": 2,
+    "titulo": "Aves como indicadores de calidad ambiental",
+    "hipotesis": "La riqueza y abundancia de aves refleja la calidad del hábitat en los distintos ambientes.",
+    "metodo": "Observación directa con binoculares. Registro de especies vistas y oídas en cada ambiente.",
+    "datos": "Especie, ambiente, hora, cantidad, comportamiento"
+  },
+  {
+    "id": 3,
+    "titulo": "Tipos de telarañas según ambiente",
+    "hipotesis": "La distribución de tipos de telarañas está relacionada con la estructura de la vegetación en cada ambiente.",
+    "metodo": "Búsqueda de telarañas en la vegetación. Clasificación según tipo geométrico.",
+    "datos": "Tipo de tela, ambiente, altura, planta soporte"
+  },
+  {
+    "id": 4,
+    "titulo": "Hongos como descomponedores",
+    "hipotesis": "La diversidad de hongos fructíferos varía según el tipo de sustrato disponible en cada ambiente.",
+    "metodo": "Relevamiento visual de cuerpos fructíferos. Identificación con clave dicotómica.",
+    "datos": "Especie/grupo, sustrato, ambiente, abundancia"
+  },
+  {
+    "id": 5,
+    "titulo": "Variables microclimáticas",
+    "hipotesis": "Los distintos ambientes generan microclimas diferentes que influyen en la distribución de los organismos.",
+    "metodo": "Medición de temperatura, humedad, luminosidad con instrumentos en cada ambiente.",
+    "datos": "Temperatura, humedad, luminosidad, ambiente, hora"
+  },
+  {
+    "id": 6,
+    "titulo": "Reptiles y su relación con el ambiente",
+    "hipotesis": "La presencia de reptiles está asociada a las condiciones microclimáticas de cada ambiente.",
+    "metodo": "Búsqueda activa y observación de reptiles en los diferentes ambientes.",
+    "datos": "Especie, ambiente, hora, actividad observada"
+  },
+  {
+    "id": 7,
+    "titulo": "Flora y estratificación vegetal",
+    "hipotesis": "La composición y estratificación de la flora cambia según el grado de intervención del bosque.",
+    "metodo": "Relevamiento de especies vegetales por estrato (arbóreo, arbustivo, herbáceo).",
+    "datos": "Especie, estrato, ambiente, cobertura estimada"
+  }
+]

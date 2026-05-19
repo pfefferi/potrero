@@ -1,0 +1,82 @@
+[
+  {
+    "nombre": "Acacia mansa",
+    "nombreCient": "Prosopis nigra",
+    "notas": "Guía p.130"
+  },
+  {
+    "nombre": "Algarrobo negro",
+    "nombreCient": "Sesbania punicea",
+    "notas": "Guía p.130"
+  },
+  {
+    "nombre": "Cangorosa",
+    "nombreCient": "Maytenus ilicifolia",
+    "notas": "Guía p.124"
+  },
+  {
+    "nombre": "Ceibo",
+    "nombreCient": "Erythrina crista-galli",
+    "notas": "Guía p.123"
+  },
+  {
+    "nombre": "Chal-chal",
+    "nombreCient": "Acacia caven",
+    "notas": "Guía p.125"
+  },
+  {
+    "nombre": "Curupí",
+    "nombreCient": "Jodina rhombifolia",
+    "notas": "Guía p.126"
+  },
+  {
+    "nombre": "Espinillo",
+    "nombreCient": "Allophylus edulis",
+    "notas": "Guía p.125"
+  },
+  {
+    "nombre": "Ingá",
+    "nombreCient": "Inga verna",
+    "notas": "Guía p.123"
+  },
+  {
+    "nombre": "Lantana",
+    "nombreCient": "Cephalanthus glabratus",
+    "notas": "Guía p.128"
+  },
+  {
+    "nombre": "Ñandubay",
+    "nombreCient": "Prosopis affinis",
+    "notas": "Guía p.124"
+  },
+  {
+    "nombre": "Rosa de bañado",
+    "nombreCient": "Hexachlamis edulis",
+    "notas": "Guía p.127"
+  },
+  {
+    "nombre": "Sarandí colorado de bañado",
+    "nombreCient": "Lantana camara",
+    "notas": "Guía p.128"
+  },
+  {
+    "nombre": "Sombra de toro",
+    "nombreCient": "Sapium haematospermum",
+    "notas": "Guía p.126"
+  },
+  {
+    "nombre": "Tuna",
+    "nombreCient": "Acacia bonariensis",
+    "notas": "Guía p.129"
+  },
+  {
+    "nombre": "Ubajay",
+    "nombreCient": "Hibiscus striatus",
+    "notas": "Guía p.127"
+  },
+  {
+    "nombre": "Uña de gato o ñapindá",
+    "nombreCient": "Opuntia ficus-indica",
+    "notas": "Guía p.129"
+  }
+]

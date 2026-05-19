@@ -1,0 +1,57 @@
+[
+  {
+    "nombre": "Cecilia",
+    "nombreCient": "Pimelodus maculatus",
+    "notas": "Guía p.113"
+  },
+  {
+    "nombre": "Escuercito",
+    "nombreCient": "Leptodactylus latrans",
+    "notas": "Guía p.112"
+  },
+  {
+    "nombre": "Rana criolla",
+    "nombreCient": "Odontophrynus  americanus",
+    "notas": "Guía p.112"
+  },
+  {
+    "nombre": "Ranita aceituna",
+    "nombreCient": "Elachistocleis bicolor",
+    "notas": "Guía p.111"
+  },
+  {
+    "nombre": "Ranita de zarzal",
+    "nombreCient": "Hypsiboas pulchellus",
+    "notas": "Guía p.111"
+  },
+  {
+    "nombre": "Ranita nadadora",
+    "nombreCient": "Physalaemus biligonigerus",
+    "notas": "Guía p.111"
+  },
+  {
+    "nombre": "Ranita enana",
+    "nombreCient": "Pseudopaludicola falcipes",
+    "notas": "Guía p.110"
+  },
+  {
+    "nombre": "Ranita llorona",
+    "nombreCient": "Pseudis minuta günther",
+    "notas": "Guía p.111"
+  },
+  {
+    "nombre": "Ranita roncadora",
+    "nombreCient": "Scinax granulatus",
+    "notas": "Guía p.110"
+  },
+  {
+    "nombre": "Sapito de jardín",
+    "nombreCient": "Rhinella fernandezae",
+    "notas": "Guía p.112"
+  },
+  {
+    "nombre": "Sapo cururú",
+    "nombreCient": "Rhinella schneideri",
+    "notas": "Guía p.112"
+  }
+]

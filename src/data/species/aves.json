@@ -1,0 +1,1522 @@
+[
+  {
+    "nombre": "Agachona chica",
+    "nombreCient": "Drymornis bridgesii",
+    "notas": "Guía p.56"
+  },
+  {
+    "nombre": "Aguatero",
+    "nombreCient": "Gallinula melanops",
+    "notas": "Guía p.38"
+  },
+  {
+    "nombre": "Águila negra",
+    "nombreCient": "Accipiter bicolor",
+    "notas": "Guía p.30"
+  },
+  {
+    "nombre": "Águila pescadora",
+    "nombreCient": "Buteo albicaudatus",
+    "notas": "Guía p.32"
+  },
+  {
+    "nombre": "Aguilucho colorado",
+    "nombreCient": "Buteogallus meridionalis",
+    "notas": "Guía p.32"
+  },
+  {
+    "nombre": "Aguilucho alas largas",
+    "nombreCient": "Caracara plancus",
+    "notas": "Guía p.32"
+  },
+  {
+    "nombre": "Aguilucho langostero",
+    "nombreCient": "Accipiter striatus",
+    "notas": "Guía p.31"
+  },
+  {
+    "nombre": "Alilicucú",
+    "nombreCient": "Asio clamator",
+    "notas": "Guía p.49"
+  },
+  {
+    "nombre": "Anambé negro",
+    "nombreCient": "Pachyramphus polychopterus",
+    "notas": "Guía p.63"
+  },
+  {
+    "nombre": "Anambé verdoso",
+    "nombreCient": "Pachyramphus viridis",
+    "notas": "Guía p.63"
+  },
+  {
+    "nombre": "Aninga",
+    "nombreCient": "Anhinga anhinga",
+    "notas": "Guía p.18"
+  },
+  {
+    "nombre": "Añapero boreal",
+    "nombreCient": "Caprimulgus parvulus",
+    "notas": "Guía p.51"
+  },
+  {
+    "nombre": "Arañero cara negra",
+    "nombreCient": "Geothlypis aequinoctialis",
+    "notas": "Guía p.81"
+  },
+  {
+    "nombre": "Arañero coronado chico",
+    "nombreCient": "Basileuterus culicivorus",
+    "notas": "Guía p.80"
+  },
+  {
+    "nombre": "Arañero silbón",
+    "nombreCient": "Cyclarhis gujanensis",
+    "notas": "Guía p.80"
+  },
+  {
+    "nombre": "Atajacamino chico",
+    "nombreCient": "Chordeiles nacunda",
+    "notas": "Guía p.51"
+  },
+  {
+    "nombre": "Atajacamino ñañarca",
+    "nombreCient": "Asio flammeus",
+    "notas": "Guía p.50"
+  },
+  {
+    "nombre": "Atajacamino tijera",
+    "nombreCient": "Chordeiles minor",
+    "notas": "Guía p.51"
+  },
+  {
+    "nombre": "Atí",
+    "nombreCient": "Chroicocephalus maculipennis",
+    "notas": "Guía p.44"
+  },
+  {
+    "nombre": "Bandurria boreal",
+    "nombreCient": "Ciconia maguari",
+    "notas": "Guía p.22"
+  },
+  {
+    "nombre": "Bandurria mora",
+    "nombreCient": "Phimosus infuscatus",
+    "notas": "Guía p.22"
+  },
+  {
+    "nombre": "Barullero",
+    "nombreCient": "Euscarthmus meloryphus",
+    "notas": "Guía p.71"
+  },
+  {
+    "nombre": "Batitú",
+    "nombreCient": "Bartramia longicauda",
+    "notas": "Guía p.42"
+  },
+  {
+    "nombre": "Becasa de mar",
+    "nombreCient": "Calidris bairdii",
+    "notas": "Guía p.42"
+  },
+  {
+    "nombre": "Becasina de bañado",
+    "nombreCient": "Chroicocephalus cirrocephalus",
+    "notas": "Guía p.43"
+  },
+  {
+    "nombre": "Benteveo",
+    "nombreCient": "Myiodynastes maculatus",
+    "notas": "Guía p.68"
+  },
+  {
+    "nombre": "Benteveo rayado",
+    "nombreCient": "Pitangus sulphuratus",
+    "notas": "Guía p.68"
+  },
+  {
+    "nombre": "Biguá",
+    "nombreCient": "Ardea cocoi",
+    "notas": "Guía p.19"
+  },
+  {
+    "nombre": "Boyerito",
+    "nombreCient": "Cacicus solitarius",
+    "notas": "Guía p.89"
+  },
+  {
+    "nombre": "Boyero negro",
+    "nombreCient": "Gnorimopsar chopi",
+    "notas": "Guía p.89"
+  },
+  {
+    "nombre": "Brasita de fuego",
+    "nombreCient": "Coryphospingus cucullatus",
+    "notas": "Guía p.86"
+  },
+  {
+    "nombre": "Burlisto castaño",
+    "nombreCient": "Casiornis rufus",
+    "notas": "Guía p.69"
+  },
+  {
+    "nombre": "Burlisto pico canela",
+    "nombreCient": "Empidonomus aurantiatocristatus",
+    "notas": "Guía p.69"
+  },
+  {
+    "nombre": "Burlisto pico negro",
+    "nombreCient": "Myiarchus ferox",
+    "notas": "Guía p.69"
+  },
+  {
+    "nombre": "Burrito canela",
+    "nombreCient": "Laterallus melanophaius",
+    "notas": "Guía p.36"
+  },
+  {
+    "nombre": "Burrito colorado",
+    "nombreCient": "Laterallus leucopyrrhus",
+    "notas": "Guía p.36"
+  },
+  {
+    "nombre": "Burrito grande",
+    "nombreCient": "Pardirallus maculatus",
+    "notas": "Guía p.36"
+  },
+  {
+    "nombre": "Cabecitanegra",
+    "nombreCient": "Icterus pyrrhopterus",
+    "notas": "Guía p.89"
+  },
+  {
+    "nombre": "Caburé chico",
+    "nombreCient": "Glaucidium brasilianum",
+    "notas": "Guía p.50"
+  },
+  {
+    "nombre": "Cachilo canela",
+    "nombreCient": "Donacospiza albifrons",
+    "notas": "Guía p.88"
+  },
+  {
+    "nombre": "Cachilo ceja amarilla",
+    "nombreCient": "Ammodramus humeralis",
+    "notas": "Guía p.87"
+  },
+  {
+    "nombre": "Cachilo corona castaña",
+    "nombreCient": "Rhynchospiza strigiceps",
+    "notas": "Guía p.86"
+  },
+  {
+    "nombre": "Cachirla chica",
+    "nombreCient": "Anthus correndera",
+    "notas": "Guía p.77"
+  },
+  {
+    "nombre": "Cachirla goteada",
+    "nombreCient": "Anthus furcatus",
+    "notas": "Guía p.77"
+  },
+  {
+    "nombre": "Cachirla pálida",
+    "nombreCient": "Anthus chacoensis",
+    "notas": "Guía p.78"
+  },
+  {
+    "nombre": "Cachirla trinadora",
+    "nombreCient": "Anthus hellmayri",
+    "notas": "Guía p.78"
+  },
+  {
+    "nombre": "Cachirla uña corta",
+    "nombreCient": "Anthus lutescens",
+    "notas": "Guía p.77"
+  },
+  {
+    "nombre": "Cacholote castaño",
+    "nombreCient": "Leptasthenura platensis",
+    "notas": "Guía p.61"
+  },
+  {
+    "nombre": "Calacante cabeza azul",
+    "nombreCient": "Columbina picui",
+    "notas": "Guía p.46"
+  },
+  {
+    "nombre": "Calandria grande",
+    "nombreCient": "Cyanocorax chrysops",
+    "notas": "Guía p.78"
+  },
+  {
+    "nombre": "Calandria real",
+    "nombreCient": "Mimus saturninus",
+    "notas": "Guía p.78"
+  },
+  {
+    "nombre": "Caminera estriada",
+    "nombreCient": "Geositta cunicularia",
+    "notas": "Guía p.56"
+  },
+  {
+    "nombre": "Canastero chaqueño",
+    "nombreCient": "Asthenes baeri",
+    "notas": "Guía p.59"
+  },
+  {
+    "nombre": "Canastero coludo",
+    "nombreCient": "Asthenes pyrrholeuca",
+    "notas": "Guía p.58"
+  },
+  {
+    "nombre": "Capuchino canela",
+    "nombreCient": "Sporophila cinnamomea",
+    "notas": "Guía p.85"
+  },
+  {
+    "nombre": "Capuchino corona gris",
+    "nombreCient": "Sporophila hypoxantha",
+    "notas": "Guía p.85"
+  },
+  {
+    "nombre": "Capuchino garganta café",
+    "nombreCient": "Sporophila palustris",
+    "notas": "Guía p.85"
+  },
+  {
+    "nombre": "Capuchino pecho blanco",
+    "nombreCient": "Sporophila ruficollis",
+    "notas": "Guía p.85"
+  },
+  {
+    "nombre": "Caracolero",
+    "nombreCient": "Coragyps atratus",
+    "notas": "Guía p.29"
+  },
+  {
+    "nombre": "Carancho",
+    "nombreCient": "Pandion haliaetus",
+    "notas": "Guía p.32"
+  },
+  {
+    "nombre": "Carau",
+    "nombreCient": "Aramides cajaneus",
+    "notas": "Guía p.35"
+  },
+  {
+    "nombre": "Cardenal amarillo",
+    "nombreCient": "Cyanoloxia brissonii",
+    "notas": "Guía p.83"
+  },
+  {
+    "nombre": "Cardenal copete rojo",
+    "nombreCient": "Gubernatrix cristata",
+    "notas": "Guía p.83"
+  },
+  {
+    "nombre": "Cardenilla",
+    "nombreCient": "Paroaria capitata",
+    "notas": "Guía p.83"
+  },
+  {
+    "nombre": "Carpinterito barrado",
+    "nombreCient": "Campephilus leucopogon",
+    "notas": "Guía p.55"
+  },
+  {
+    "nombre": "Carpintero bataraz chico",
+    "nombreCient": "Dryobates mixtus",
+    "notas": "Guía p.55"
+  },
+  {
+    "nombre": "Carpintero blanco",
+    "nombreCient": "Melanerpes candidus",
+    "notas": "Guía p.55"
+  },
+  {
+    "nombre": "Carpintero campestre",
+    "nombreCient": "Colaptes campestris",
+    "notas": "Guía p.54"
+  },
+  {
+    "nombre": "Carpintero del cardón",
+    "nombreCient": "Colaptes melanochloros",
+    "notas": "Guía p.54"
+  },
+  {
+    "nombre": "Carpintero lomo blanco",
+    "nombreCient": "Picumnus cirratus",
+    "notas": "Guía p.55"
+  },
+  {
+    "nombre": "Carpintero oliva manchado",
+    "nombreCient": "Dryobates spilogaster",
+    "notas": "Guía p.54"
+  },
+  {
+    "nombre": "Carpintero real",
+    "nombreCient": "Melanerpes cactorum",
+    "notas": "Guía p.54"
+  },
+  {
+    "nombre": "Celestino",
+    "nombreCient": "Piranga flava",
+    "notas": "Guía p.81"
+  },
+  {
+    "nombre": "Chajá",
+    "nombreCient": "Chauna torquata",
+    "notas": "Guía p.23"
+  },
+  {
+    "nombre": "Charlatán",
+    "nombreCient": "Agelasticus cyanopus",
+    "notas": "Guía p.91"
+  },
+  {
+    "nombre": "Chiflón",
+    "nombreCient": "Phalacrocorax brasilianus",
+    "notas": "Guía p.19"
+  },
+  {
+    "nombre": "Chimachima",
+    "nombreCient": "Falco peregrinus cassini",
+    "notas": "Guía p.33"
+  },
+  {
+    "nombre": "Chimango",
+    "nombreCient": "Milvago chimachima",
+    "notas": "Guía p.33"
+  },
+  {
+    "nombre": "Chinchero chico",
+    "nombreCient": "Lepidocolaptes angustirostris",
+    "notas": "Guía p.56"
+  },
+  {
+    "nombre": "Chinchero grande",
+    "nombreCient": "Thinocorus rumicivorus",
+    "notas": "Guía p.56"
+  },
+  {
+    "nombre": "Chingolo",
+    "nombreCient": "Microspingus lateralis",
+    "notas": "Guía p.87"
+  },
+  {
+    "nombre": "Chiricote",
+    "nombreCient": "Aramides ypecaha",
+    "notas": "Guía p.35"
+  },
+  {
+    "nombre": "Chiví-chiví",
+    "nombreCient": "Polioptila dumicola",
+    "notas": "Guía p.79"
+  },
+  {
+    "nombre": "Choca corona negruzca",
+    "nombreCient": "Phacellodomus striaticollis",
+    "notas": "Guía p.62"
+  },
+  {
+    "nombre": "Choca corona rojiza",
+    "nombreCient": "Syndactyla rufosuperciliata",
+    "notas": "Guía p.62"
+  },
+  {
+    "nombre": "Chopí",
+    "nombreCient": "Spinus magellanicus",
+    "notas": "Guía p.89"
+  },
+  {
+    "nombre": "Chorlito de collar",
+    "nombreCient": "Charadrius modestus",
+    "notas": "Guía p.40"
+  },
+  {
+    "nombre": "Chorlito pecho canela",
+    "nombreCient": "Charadrius collaris",
+    "notas": "Guía p.40"
+  },
+  {
+    "nombre": "Chorlo cabezón",
+    "nombreCient": "Himantopus mexicanus",
+    "notas": "Guía p.39"
+  },
+  {
+    "nombre": "Chorlo pampa",
+    "nombreCient": "Oreopholus ruficollis",
+    "notas": "Guía p.39"
+  },
+  {
+    "nombre": "Chororó",
+    "nombreCient": "Phytotoma rutila",
+    "notas": "Guía p.63"
+  },
+  {
+    "nombre": "Chotoy",
+    "nombreCient": "Asthenes hudsoni",
+    "notas": "Guía p.60"
+  },
+  {
+    "nombre": "Churrinche",
+    "nombreCient": "Hemitriccus margaritaceiventer",
+    "notas": "Guía p.71"
+  },
+  {
+    "nombre": "Cigüeña americana",
+    "nombreCient": "Theristicus caerulescens",
+    "notas": "Guía p.22"
+  },
+  {
+    "nombre": "Cisne cuello negro",
+    "nombreCient": "Coscoroba coscoroba",
+    "notas": "Guía p.24"
+  },
+  {
+    "nombre": "Colorada",
+    "nombreCient": "Nothura maculosa",
+    "notas": "Guía p.17"
+  },
+  {
+    "nombre": "Coludito copetón",
+    "nombreCient": "Phacellodomus sibilatrix",
+    "notas": "Guía p.61"
+  },
+  {
+    "nombre": "Coludo grande",
+    "nombreCient": "Emberizoides herbicola",
+    "notas": "Guía p.88"
+  },
+  {
+    "nombre": "Corbatita",
+    "nombreCient": "Cyanoloxia glaucocaerulea",
+    "notas": "Guía p.84"
+  },
+  {
+    "nombre": "Corbatita dominó",
+    "nombreCient": "Sporophila caerulescens",
+    "notas": "Guía p.84"
+  },
+  {
+    "nombre": "Cortarramas",
+    "nombreCient": "Taraba major",
+    "notas": "Guía p.63"
+  },
+  {
+    "nombre": "Coscoroba",
+    "nombreCient": "Cygnus melancoryphus",
+    "notas": "Guía p.24"
+  },
+  {
+    "nombre": "Cotorra",
+    "nombreCient": "Coccycua cinerea",
+    "notas": "Guía p.47"
+  },
+  {
+    "nombre": "Crespín",
+    "nombreCient": "Guira guira",
+    "notas": "Guía p.48"
+  },
+  {
+    "nombre": "Crestudo",
+    "nombreCient": "Anumbius annumbi",
+    "notas": "Guía p.57"
+  },
+  {
+    "nombre": "Cuclillo canela",
+    "nombreCient": "Coccyzus americanus",
+    "notas": "Guía p.47"
+  },
+  {
+    "nombre": "Cuclillo chico",
+    "nombreCient": "Coccyzus melacoryphus",
+    "notas": "Guía p.47"
+  },
+  {
+    "nombre": "Cuclillo pico amarillo",
+    "nombreCient": "Myiopsitta monachus",
+    "notas": "Guía p.47"
+  },
+  {
+    "nombre": "Cuervillo cara pelada",
+    "nombreCient": "Theristicus caudatus",
+    "notas": "Guía p.22"
+  },
+  {
+    "nombre": "Cuervillo de cañada",
+    "nombreCient": "Dendrocygna autumnlis",
+    "notas": "Guía p.23"
+  },
+  {
+    "nombre": "Curutié blanco",
+    "nombreCient": "Cranioleuca pyrrhophia",
+    "notas": "Guía p.59"
+  },
+  {
+    "nombre": "Curutié colorado",
+    "nombreCient": "Certhiaxis cinnamomeus",
+    "notas": "Guía p.58"
+  },
+  {
+    "nombre": "Curutié ocráceo",
+    "nombreCient": "Limnoctites sulphuriferus",
+    "notas": "Guía p.58"
+  },
+  {
+    "nombre": "Doradito copetón",
+    "nombreCient": "Pseudocolopteryx sclateri",
+    "notas": "Guía p.72"
+  },
+  {
+    "nombre": "Doradito pampeano",
+    "nombreCient": "Pseudocolopteryx flaviventris",
+    "notas": "Guía p.72"
+  },
+  {
+    "nombre": "Dormilona cara negra",
+    "nombreCient": "Hymenops perspicillatus",
+    "notas": "Guía p.64"
+  },
+  {
+    "nombre": "Espartillero enano",
+    "nombreCient": "Phleocryptes melanops",
+    "notas": "Guía p.59"
+  },
+  {
+    "nombre": "Espartillero pampeano",
+    "nombreCient": "Schoeniophylax phryganophilus",
+    "notas": "Guía p.60"
+  },
+  {
+    "nombre": "Esparvero estriado",
+    "nombreCient": "Buteo swainsoni",
+    "notas": "Guía p.31"
+  },
+  {
+    "nombre": "Esparvero variado",
+    "nombreCient": "Buteogallus urubitinga",
+    "notas": "Guía p.30"
+  },
+  {
+    "nombre": "Espátula rosada",
+    "nombreCient": "Platalea ajaja",
+    "notas": "Guía p.23"
+  },
+  {
+    "nombre": "Espinero chico",
+    "nombreCient": "Pseudoseisura lophotes",
+    "notas": "Guía p.61"
+  },
+  {
+    "nombre": "Espinero pecho manchado",
+    "nombreCient": "Thamnophilus caerulescens",
+    "notas": "Guía p.62"
+  },
+  {
+    "nombre": "Falaropo común",
+    "nombreCient": "Gallinago paraguaiae",
+    "notas": "Guía p.43"
+  },
+  {
+    "nombre": "Federal",
+    "nombreCient": "Amblyramphus holosericeus",
+    "notas": "Guía p.92"
+  },
+  {
+    "nombre": "Fiofío grande",
+    "nombreCient": "Camptostoma obsoletum",
+    "notas": "Guía p.73"
+  },
+  {
+    "nombre": "Fiofío pico corto",
+    "nombreCient": "Elaenia albiceps",
+    "notas": "Guía p.73"
+  },
+  {
+    "nombre": "Fiofío silbón",
+    "nombreCient": "Elaenia parvirostris",
+    "notas": "Guía p.73"
+  },
+  {
+    "nombre": "Frutero azul",
+    "nombreCient": "Stephanophorus diadematus",
+    "notas": "Guía p.81"
+  },
+  {
+    "nombre": "Fueguero",
+    "nombreCient": "Thraupis sayaca",
+    "notas": "Guía p.81"
+  },
+  {
+    "nombre": "Gallareta chica",
+    "nombreCient": "Fulica armillata",
+    "notas": "Guía p.37"
+  },
+  {
+    "nombre": "Gallareta escudete rojo",
+    "nombreCient": "Fulica leucoptera",
+    "notas": "Guía p.37"
+  },
+  {
+    "nombre": "Gallareta ligas rojas",
+    "nombreCient": "Fulica rufrifrons",
+    "notas": "Guía p.37"
+  },
+  {
+    "nombre": "Gallineta pico pintado",
+    "nombreCient": "Aramus guarana",
+    "notas": "Guía p.35"
+  },
+  {
+    "nombre": "Gallineta overa",
+    "nombreCient": "Porzana albicollis",
+    "notas": "Guía p.36"
+  },
+  {
+    "nombre": "Garcita azulada",
+    "nombreCient": "Bubulcus ibis",
+    "notas": "Guía p.21"
+  },
+  {
+    "nombre": "Garcita blanca",
+    "nombreCient": "Ardea alba",
+    "notas": "Guía p.20"
+  },
+  {
+    "nombre": "Garcita bueyera",
+    "nombreCient": "Butorides striata",
+    "notas": "Guía p.21"
+  },
+  {
+    "nombre": "Garza blanca",
+    "nombreCient": "Botaurus pinnatus",
+    "notas": "Guía p.20"
+  },
+  {
+    "nombre": "Garza bruja",
+    "nombreCient": "Mycteria americana",
+    "notas": "Guía p.21"
+  },
+  {
+    "nombre": "Garza mora",
+    "nombreCient": "Syrigma sibilatrix",
+    "notas": "Guía p.19"
+  },
+  {
+    "nombre": "Gavilán ceniciento",
+    "nombreCient": "Circus buffoni",
+    "notas": "Guía p.30"
+  },
+  {
+    "nombre": "Gavilán mixto",
+    "nombreCient": "Elanus leucurus",
+    "notas": "Guía p.29"
+  },
+  {
+    "nombre": "Gavilán patas largas",
+    "nombreCient": "Geranospiza caerulescens",
+    "notas": "Guía p.31"
+  },
+  {
+    "nombre": "Gavilán planeador",
+    "nombreCient": "Circus cinereus",
+    "notas": "Guía p.30"
+  },
+  {
+    "nombre": "Gaviota capucho gris",
+    "nombreCient": "Larus dominicanus",
+    "notas": "Guía p.43"
+  },
+  {
+    "nombre": "Gaviota capucho café",
+    "nombreCient": "Phaetusa simplex",
+    "notas": "Guía p.44"
+  },
+  {
+    "nombre": "Gaviota cocinera",
+    "nombreCient": "Phalaropus tricolor",
+    "notas": "Guía p.43"
+  },
+  {
+    "nombre": "Gaviotín de río",
+    "nombreCient": "Sterna superciliaris",
+    "notas": "Guía p.44"
+  },
+  {
+    "nombre": "Gaviotín lagunero",
+    "nombreCient": "Sterna trudeaui",
+    "notas": "Guía p.44"
+  },
+  {
+    "nombre": "Golondrina barranquera",
+    "nombreCient": "Alopochelidon fucata",
+    "notas": "Guía p.76"
+  },
+  {
+    "nombre": "Golondrina cabeza rojiza",
+    "nombreCient": "Pygochelidon cyanoleuca",
+    "notas": "Guía p.76"
+  },
+  {
+    "nombre": "Golondrina ceja blanca",
+    "nombreCient": "Progne chalybea",
+    "notas": "Guía p.74"
+  },
+  {
+    "nombre": "Golondrina doméstica",
+    "nombreCient": "Progne elegans",
+    "notas": "Guía p.74"
+  },
+  {
+    "nombre": "Golondrina negra",
+    "nombreCient": "Progne tapera",
+    "notas": "Guía p.74"
+  },
+  {
+    "nombre": "Golondrina parda",
+    "nombreCient": "Tachycineta leucorrhoa",
+    "notas": "Guía p.74"
+  },
+  {
+    "nombre": "Golondrina patagónica",
+    "nombreCient": "Hirundo rustica",
+    "notas": "Guía p.75"
+  },
+  {
+    "nombre": "Golondrina rabadilla canela",
+    "nombreCient": "Petrochelidon pyrrhonota",
+    "notas": "Guía p.75"
+  },
+  {
+    "nombre": "Golondrina ribereña",
+    "nombreCient": "Stelgidopteryx ruficollis",
+    "notas": "Guía p.76"
+  },
+  {
+    "nombre": "Golondrina tijerita",
+    "nombreCient": "Riparia riparia",
+    "notas": "Guía p.75"
+  },
+  {
+    "nombre": "Golondrina zapadora",
+    "nombreCient": "Tachycineta leucopyga",
+    "notas": "Guía p.75"
+  },
+  {
+    "nombre": "Halcón peregrino sudamericano",
+    "nombreCient": "Milvago chimango",
+    "notas": "Guía p.33"
+  },
+  {
+    "nombre": "Halcón peregrino de la tundra",
+    "nombreCient": "Falco femoralis",
+    "notas": "Guía p.34"
+  },
+  {
+    "nombre": "Halcón plomizo",
+    "nombreCient": "Falco peregrinus tundrius",
+    "notas": "Guía p.34"
+  },
+  {
+    "nombre": "Halconcito colorado",
+    "nombreCient": "Falco sparverius",
+    "notas": "Guía p.34"
+  },
+  {
+    "nombre": "Halconcito gris",
+    "nombreCient": "Spiziapteryx circumcincta",
+    "notas": "Guía p.33"
+  },
+  {
+    "nombre": "Hocó colorado",
+    "nombreCient": "Tigrisoma lineatum",
+    "notas": "Guía p.19"
+  },
+  {
+    "nombre": "Hornero",
+    "nombreCient": "Cinclodes fuscus",
+    "notas": "Guía p.57"
+  },
+  {
+    "nombre": "Inambú campestre",
+    "nombreCient": "Rhea americana",
+    "notas": "Guía p.17"
+  },
+  {
+    "nombre": "Ipacaá",
+    "nombreCient": "Pardirallus sanguinolentus",
+    "notas": "Guía p.35"
+  },
+  {
+    "nombre": "Jacana",
+    "nombreCient": "Jacana jacana",
+    "notas": "Guía p.38"
+  },
+  {
+    "nombre": "Jilguero dorado",
+    "nombreCient": "Sicalis flaveola",
+    "notas": "Guía p.86"
+  },
+  {
+    "nombre": "Jote cabeza amarilla",
+    "nombreCient": "Cathartes aura",
+    "notas": "Guía p.28"
+  },
+  {
+    "nombre": "Jote cabeza colorada",
+    "nombreCient": "Cathartes burrovianus",
+    "notas": "Guía p.28"
+  },
+  {
+    "nombre": "Jote cabeza negra",
+    "nombreCient": "Parabuteo unicinctus",
+    "notas": "Guía p.29"
+  },
+  {
+    "nombre": "Juan chiviro",
+    "nombreCient": "Myiothlypis leucoblephara",
+    "notas": "Guía p.80"
+  },
+  {
+    "nombre": "Junquero",
+    "nombreCient": "Spartonoica maluroides",
+    "notas": "Guía p.59"
+  },
+  {
+    "nombre": "Lechucita vizcachera",
+    "nombreCient": "Athene cunicularia",
+    "notas": "Guía p.49"
+  },
+  {
+    "nombre": "Lechuza de campanario",
+    "nombreCient": "Piaya cayana",
+    "notas": "Guía p.48"
+  },
+  {
+    "nombre": "Lechuzón de campo",
+    "nombreCient": "Nyctibius griseus",
+    "notas": "Guía p.50"
+  },
+  {
+    "nombre": "Lechuzón orejudo",
+    "nombreCient": "Bubo virginianus",
+    "notas": "Guía p.49"
+  },
+  {
+    "nombre": "Leñatero",
+    "nombreCient": "Coryphistera alaudina",
+    "notas": "Guía p.57"
+  },
+  {
+    "nombre": "Macá cara blanca",
+    "nombreCient": "Rhynchotus rufescens",
+    "notas": "Guía p.17"
+  },
+  {
+    "nombre": "Macá grande",
+    "nombreCient": "Podiceps major",
+    "notas": "Guía p.18"
+  },
+  {
+    "nombre": "Macá gris",
+    "nombreCient": "Podilymbus podiceps",
+    "notas": "Guía p.18"
+  },
+  {
+    "nombre": "Macá pico grueso",
+    "nombreCient": "Tachybaptus dominicus",
+    "notas": "Guía p.18"
+  },
+  {
+    "nombre": "Martín pescador chico",
+    "nombreCient": "Chloroceryle amazona",
+    "notas": "Guía p.53"
+  },
+  {
+    "nombre": "Martín pescador grande",
+    "nombreCient": "Chloroceryle americana",
+    "notas": "Guía p.53"
+  },
+  {
+    "nombre": "Martín pescador mediano",
+    "nombreCient": "Chlorostilbon lucidus",
+    "notas": "Guía p.53"
+  },
+  {
+    "nombre": "Milano blanco",
+    "nombreCient": "Rostrhamus sociabilis",
+    "notas": "Guía p.29"
+  },
+  {
+    "nombre": "Mirasol grande",
+    "nombreCient": "Egretta thula",
+    "notas": "Guía p.20"
+  },
+  {
+    "nombre": "Mirasol estriado",
+    "nombreCient": "Ixobrychus involucris",
+    "notas": "Guía p.20"
+  },
+  {
+    "nombre": "Misto",
+    "nombreCient": "Sicalis luteola",
+    "notas": "Guía p.86"
+  },
+  {
+    "nombre": "Monjita blanca",
+    "nombreCient": "Lessonia rufa",
+    "notas": "Guía p.64"
+  },
+  {
+    "nombre": "Monjita coronada",
+    "nombreCient": "Serpophaga griseicapilla",
+    "notas": "Guía p.65"
+  },
+  {
+    "nombre": "Monjita dominica",
+    "nombreCient": "Xolmis cinereus",
+    "notas": "Guía p.65"
+  },
+  {
+    "nombre": "Monjita gris",
+    "nombreCient": "Xolmis coronatus",
+    "notas": "Guía p.65"
+  },
+  {
+    "nombre": "Monterita cabeza negra",
+    "nombreCient": "Embernaga platensis",
+    "notas": "Guía p.88"
+  },
+  {
+    "nombre": "Monterita litoraleña",
+    "nombreCient": "Poospiza nigrorufa",
+    "notas": "Guía p.87"
+  },
+  {
+    "nombre": "Mosqueta carasucia",
+    "nombreCient": "Phylloscartes ventralis",
+    "notas": "Guía p.71"
+  },
+  {
+    "nombre": "Mosqueta estriada",
+    "nombreCient": "Lathrotriccus euleri",
+    "notas": "Guía p.70"
+  },
+  {
+    "nombre": "Mosqueta ojo dorado",
+    "nombreCient": "Pyrocephalus rubinus",
+    "notas": "Guía p.71"
+  },
+  {
+    "nombre": "Mosqueta parda",
+    "nombreCient": "Myiophobus fasciatus",
+    "notas": "Guía p.70"
+  },
+  {
+    "nombre": "Ñacundá",
+    "nombreCient": "Hydropsalis torquata",
+    "notas": "Guía p.51"
+  },
+  {
+    "nombre": "Ñacurutú",
+    "nombreCient": "Megascops choliba",
+    "notas": "Guía p.49"
+  },
+  {
+    "nombre": "Ñandú",
+    "nombreCient": "Rollandia rolland",
+    "notas": "Guía p.17"
+  },
+  {
+    "nombre": "Naranjero",
+    "nombreCient": "Pipraeidea bonariensis",
+    "notas": "Guía p.82"
+  },
+  {
+    "nombre": "Pajonalera pico curvo",
+    "nombreCient": "Limnornis curvirostris",
+    "notas": "Guía p.58"
+  },
+  {
+    "nombre": "Paloma manchada",
+    "nombreCient": "Patagioenas maculosa",
+    "notas": "Guía p.45"
+  },
+  {
+    "nombre": "Pato barcino",
+    "nombreCient": "Anas flavirostris",
+    "notas": "Guía p.25"
+  },
+  {
+    "nombre": "Pato cabeza negra",
+    "nombreCient": "Amazonetta brasiliensis",
+    "notas": "Guía p.27"
+  },
+  {
+    "nombre": "Pato capuchino",
+    "nombreCient": "Anas bahamensis",
+    "notas": "Guía p.26"
+  },
+  {
+    "nombre": "Pato colorado",
+    "nombreCient": "Anas cyanoptera",
+    "notas": "Guía p.26"
+  },
+  {
+    "nombre": "Pato cuchara",
+    "nombreCient": "Anas platalea",
+    "notas": "Guía p.26"
+  },
+  {
+    "nombre": "Pato cutirí",
+    "nombreCient": "Callonetta leucophrys",
+    "notas": "Guía p.27"
+  },
+  {
+    "nombre": "Pato de collar",
+    "nombreCient": "Heteronetta atricapilla",
+    "notas": "Guía p.27"
+  },
+  {
+    "nombre": "Pato fierro",
+    "nombreCient": "Nomonyx dominicus",
+    "notas": "Guía p.28"
+  },
+  {
+    "nombre": "Pato gargantilla",
+    "nombreCient": "Anas versicolor",
+    "notas": "Guía p.26"
+  },
+  {
+    "nombre": "Pato maicero",
+    "nombreCient": "Anas georgica",
+    "notas": "Guía p.25"
+  },
+  {
+    "nombre": "Pato overo",
+    "nombreCient": "Anas sibilatrix",
+    "notas": "Guía p.25"
+  },
+  {
+    "nombre": "Pato picazo",
+    "nombreCient": "Netta peposaca",
+    "notas": "Guía p.27"
+  },
+  {
+    "nombre": "Pato real",
+    "nombreCient": "Cairina moschata",
+    "notas": "Guía p.25"
+  },
+  {
+    "nombre": "Pato zambullidor chico",
+    "nombreCient": "Oxyura vittata",
+    "notas": "Guía p.28"
+  },
+  {
+    "nombre": "Pava de monte ribereña",
+    "nombreCient": "Penelope obscura",
+    "notas": "Guía p.34"
+  },
+  {
+    "nombre": "Pecho amarillo",
+    "nombreCient": "Pseudoleistes virescens",
+    "notas": "Guía p.92"
+  },
+  {
+    "nombre": "Pecho colorado",
+    "nombreCient": "Sturnella superciliaris",
+    "notas": "Guía p.92"
+  },
+  {
+    "nombre": "Pepitero de collar",
+    "nombreCient": "Saltator aurantiirostris",
+    "notas": "Guía p.82"
+  },
+  {
+    "nombre": "Pepitero gris",
+    "nombreCient": "Saltator coerulescens",
+    "notas": "Guía p.82"
+  },
+  {
+    "nombre": "Pepitero verdoso",
+    "nombreCient": "Saltator similis",
+    "notas": "Guía p.82"
+  },
+  {
+    "nombre": "Perdiz",
+    "nombreCient": "",
+    "notas": "Guía p.17"
+  },
+  {
+    "nombre": "Picabuey",
+    "nombreCient": "Machetornis rixosa",
+    "notas": "Guía p.67"
+  },
+  {
+    "nombre": "Picaflor bronceado",
+    "nombreCient": "Florisuga fusca",
+    "notas": "Guía p.52"
+  },
+  {
+    "nombre": "Picaflor de barbijo",
+    "nombreCient": "Heliomaster furcifer",
+    "notas": "Guía p.52"
+  },
+  {
+    "nombre": "Picaflor garganta blanca",
+    "nombreCient": "Hylocharis chrysura",
+    "notas": "Guía p.52"
+  },
+  {
+    "nombre": "Picaflor negro",
+    "nombreCient": "Leucochloris albicollis",
+    "notas": "Guía p.52"
+  },
+  {
+    "nombre": "Picaflor verde",
+    "nombreCient": "Megaceryle torquata",
+    "notas": "Guía p.53"
+  },
+  {
+    "nombre": "Picazuro",
+    "nombreCient": "Patagioenas picazuro",
+    "notas": "Guía p.45"
+  },
+  {
+    "nombre": "Pico de plata",
+    "nombreCient": "Muscisaxicola maclovianus",
+    "notas": "Guía p.64"
+  },
+  {
+    "nombre": "Pijuí cola parda",
+    "nombreCient": "Synallaxis albescens",
+    "notas": "Guía p.60"
+  },
+  {
+    "nombre": "Pijuí frente gris",
+    "nombreCient": "Synallaxis frontalis",
+    "notas": "Guía p.60"
+  },
+  {
+    "nombre": "Pijuí plomizo",
+    "nombreCient": "Synallaxis spixi",
+    "notas": "Guía p.61"
+  },
+  {
+    "nombre": "Piojito gris",
+    "nombreCient": "Serpophaga nigricans",
+    "notas": "Guía p.72"
+  },
+  {
+    "nombre": "Piojito silbón",
+    "nombreCient": "Elaenia spectabilis",
+    "notas": "Guía p.73"
+  },
+  {
+    "nombre": "Piojito tiquitiqui",
+    "nombreCient": "Serpophaga subcristata",
+    "notas": "Guía p.72"
+  },
+  {
+    "nombre": "Piojito trinador",
+    "nombreCient": "Xolmis dominicanus",
+    "notas": "Guía p.65"
+  },
+  {
+    "nombre": "Pirincho",
+    "nombreCient": "Tapera naevia",
+    "notas": "Guía p.48"
+  },
+  {
+    "nombre": "Pitiayumí",
+    "nombreCient": "Setophaga pitiayumi",
+    "notas": "Guía p.80"
+  },
+  {
+    "nombre": "Pitotoy chico",
+    "nombreCient": "Tringa flavipes",
+    "notas": "Guía p.40"
+  },
+  {
+    "nombre": "Pitotoy grande",
+    "nombreCient": "Tringa melanoleuca",
+    "notas": "Guía p.40"
+  },
+  {
+    "nombre": "Pitotoy solitario",
+    "nombreCient": "Actitis macularius",
+    "notas": "Guía p.41"
+  },
+  {
+    "nombre": "Playerito canela",
+    "nombreCient": "Calidris melanotos",
+    "notas": "Guía p.41"
+  },
+  {
+    "nombre": "Playerito manchado",
+    "nombreCient": "Calidris subruficollis",
+    "notas": "Guía p.41"
+  },
+  {
+    "nombre": "Playerito pectoral",
+    "nombreCient": "Tringa solitaria",
+    "notas": "Guía p.41"
+  },
+  {
+    "nombre": "Playerito unicolor",
+    "nombreCient": "Calidris fusciscollis",
+    "notas": "Guía p.42"
+  },
+  {
+    "nombre": "Pollona azul",
+    "nombreCient": "Nycticryphes semicollaris",
+    "notas": "Guía p.38"
+  },
+  {
+    "nombre": "Pollona negra",
+    "nombreCient": "Gallinula galeata",
+    "notas": "Guía p.37"
+  },
+  {
+    "nombre": "Pollona pintada",
+    "nombreCient": "Porphyrio martinica",
+    "notas": "Guía p.38"
+  },
+  {
+    "nombre": "Rabadilla blanca",
+    "nombreCient": "Limosa haemastica",
+    "notas": "Guía p.42"
+  },
+  {
+    "nombre": "Ratona",
+    "nombreCient": "Troglodytes aedon",
+    "notas": "Guía p.77"
+  },
+  {
+    "nombre": "Rayador",
+    "nombreCient": "Rynchops niger",
+    "notas": "Guía p.45"
+  },
+  {
+    "nombre": "Reinamora chica",
+    "nombreCient": "Sporophila collaris",
+    "notas": "Guía p.84"
+  },
+  {
+    "nombre": "Reinamora grande",
+    "nombreCient": "Paroaria coronata",
+    "notas": "Guía p.83"
+  },
+  {
+    "nombre": "Remolinera parda",
+    "nombreCient": "Furnarius rufus",
+    "notas": "Guía p.57"
+  },
+  {
+    "nombre": "Sietevestidos",
+    "nombreCient": "Zonotrichia capensis",
+    "notas": "Guía p.87"
+  },
+  {
+    "nombre": "Sirirí vientre negro",
+    "nombreCient": "Plegadis chihi",
+    "notas": "Guía p.23"
+  },
+  {
+    "nombre": "Sirirí colorado",
+    "nombreCient": "Dendrocygna bicolor",
+    "notas": "Guía p.24"
+  },
+  {
+    "nombre": "Sirirí pampa",
+    "nombreCient": "Dendrocygna viduata",
+    "notas": "Guía p.24"
+  },
+  {
+    "nombre": "Sobrepuesto austral",
+    "nombreCient": "Xolmis irupero",
+    "notas": "Guía p.64"
+  },
+  {
+    "nombre": "Suirirí amarillo",
+    "nombreCient": "Polystictus pectoralis",
+    "notas": "Guía p.67"
+  },
+  {
+    "nombre": "Suirirí gris",
+    "nombreCient": "Sublegatus modestus",
+    "notas": "Guía p.70"
+  },
+  {
+    "nombre": "Suirirí pico corto",
+    "nombreCient": "Suiriri suiriri",
+    "notas": "Guía p.70"
+  },
+  {
+    "nombre": "Suirirí real",
+    "nombreCient": "Tyrannus melancholicus",
+    "notas": "Guía p.68"
+  },
+  {
+    "nombre": "Tachurí canela",
+    "nombreCient": "Satrapa icterophrys",
+    "notas": "Guía p.67"
+  },
+  {
+    "nombre": "Tachurí sietecolores",
+    "nombreCient": "Tachuris rubrigastra",
+    "notas": "Guía p.67"
+  },
+  {
+    "nombre": "Tacuarita azul",
+    "nombreCient": "Turdus amaurochalinus",
+    "notas": "Guía p.79"
+  },
+  {
+    "nombre": "Taguató",
+    "nombreCient": "Rupornis magnirostris",
+    "notas": "Guía p.31"
+  },
+  {
+    "nombre": "Tero",
+    "nombreCient": "Pluvialis dominica",
+    "notas": "Guía p.39"
+  },
+  {
+    "nombre": "Tero real",
+    "nombreCient": "Vanellus chilensis",
+    "notas": "Guía p.39"
+  },
+  {
+    "nombre": "Ticotico estriado",
+    "nombreCient": "Thamnophilus ruficapillus",
+    "notas": "Guía p.62"
+  },
+  {
+    "nombre": "Tijereta",
+    "nombreCient": "Tyrannus savana",
+    "notas": "Guía p.68"
+  },
+  {
+    "nombre": "Tingazú",
+    "nombreCient": "Tyto alba",
+    "notas": "Guía p.48"
+  },
+  {
+    "nombre": "Torcacita picuí",
+    "nombreCient": "Columbina talpacoti",
+    "notas": "Guía p.46"
+  },
+  {
+    "nombre": "Torcacita colorada",
+    "nombreCient": "Leptotila verreauxi",
+    "notas": "Guía p.46"
+  },
+  {
+    "nombre": "Torcaza",
+    "nombreCient": "Zenaida auriculata",
+    "notas": "Guía p.45"
+  },
+  {
+    "nombre": "Tordo amarillo",
+    "nombreCient": "Agelaioides badius",
+    "notas": "Guía p.90"
+  },
+  {
+    "nombre": "Tordo músico",
+    "nombreCient": "Molothrus bonariensis",
+    "notas": "Guía p.90"
+  },
+  {
+    "nombre": "Tordo pico corto",
+    "nombreCient": "Molothrus rufoaxillaris",
+    "notas": "Guía p.90"
+  },
+  {
+    "nombre": "Tordo renegrido",
+    "nombreCient": "Xanthopsar flavus",
+    "notas": "Guía p.90"
+  },
+  {
+    "nombre": "Tuquito gris",
+    "nombreCient": "Myiarchus swainsoni",
+    "notas": "Guía p.69"
+  },
+  {
+    "nombre": "Tuquito rayado",
+    "nombreCient": "Empidonomus varius",
+    "notas": "Guía p.66"
+  },
+  {
+    "nombre": "Tuyuyú",
+    "nombreCient": "Nycticorax nycticorax",
+    "notas": "Guía p.21"
+  },
+  {
+    "nombre": "Urraca criolla",
+    "nombreCient": "",
+    "notas": "Guía p.76"
+  },
+  {
+    "nombre": "Urutaú",
+    "nombreCient": "Systellura longirostris",
+    "notas": "Guía p.50"
+  },
+  {
+    "nombre": "Varillero ala amarilla",
+    "nombreCient": "Agelasticus thilius",
+    "notas": "Guía p.91"
+  },
+  {
+    "nombre": "Varillero congo",
+    "nombreCient": "Chrysomus ruficapillus",
+    "notas": "Guía p.91"
+  },
+  {
+    "nombre": "Varillero negro hembra",
+    "nombreCient": "Dolichonyx oryzivorus",
+    "notas": "Guía p.91"
+  },
+  {
+    "nombre": "Verdón",
+    "nombreCient": "Microspingus melanoleucus",
+    "notas": "Guía p.88"
+  },
+  {
+    "nombre": "Viudita lomo negro",
+    "nombreCient": "Fluvicola albiventer",
+    "notas": "Guía p.66"
+  },
+  {
+    "nombre": "Viudita pico celeste",
+    "nombreCient": "Knipolegus aterrimus",
+    "notas": "Guía p.66"
+  },
+  {
+    "nombre": "Viudita trinadora",
+    "nombreCient": "Knipolegus cyanirostris",
+    "notas": "Guía p.66"
+  },
+  {
+    "nombre": "Volatinero",
+    "nombreCient": "Volatina jacarina",
+    "notas": "Guía p.84"
+  },
+  {
+    "nombre": "Yerutí gris",
+    "nombreCient": "Thectocercus acuticaudatus",
+    "notas": "Guía p.46"
+  },
+  {
+    "nombre": "Zorzal chalchalero",
+    "nombreCient": "Turdus rufiventris",
+    "notas": "Guía p.79"
+  },
+  {
+    "nombre": "Zorzal colorado",
+    "nombreCient": "Vireo chivi",
+    "notas": "Guía p.79"
+  }
+]

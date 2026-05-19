@@ -1,0 +1,27 @@
+[
+  {
+    "nombre": "Estornino pinto",
+    "nombreCient": "Passer domesticus",
+    "notas": "Guía p.118"
+  },
+  {
+    "nombre": "Gorrión común",
+    "nombreCient": "Sturnus vulgaris",
+    "notas": "Guía p.118"
+  },
+  {
+    "nombre": "Ciervo axis",
+    "nombreCient": "Axis axis",
+    "notas": "Guía p.116, 119"
+  },
+  {
+    "nombre": "Jabalí",
+    "nombreCient": "Sus scrofa",
+    "notas": "Guía p.117, 119"
+  },
+  {
+    "nombre": "Liebre europea",
+    "nombreCient": "Lepus europaeus",
+    "notas": "Guía p.119"
+  }
+]

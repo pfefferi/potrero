@@ -1,0 +1,19 @@
+{
+  "id": "aranas",
+  "title": "Planilla de Arañas",
+  "icon": "🕷️",
+  "recordatorio": "No se olviden de completar la posición del GPS de cada punto, TODOS los datos que figuran a continuación y coloquen palitos de truco en cada individuo de cada especie que ven.",
+  "nota": "Las telas se relevan en bandas-transecta de 5m largo × 2m ancho × 2m alto. Rociar con agua usando el fumigador.",
+  "fields": [
+    { "key": "grupo", "label": "Grupo", "type": "select", "options": ["1", "2", "3", "4"] },
+    { "key": "ambiente", "label": "Ambiente", "type": "select", "options": ["Área protegida", "Plantación joven", "Plantación intermedia", "Plantación madura"] },
+    { "key": "fecha", "label": "Fecha", "type": "date" },
+    { "key": "punto", "label": "Punto (1-5)", "type": "select", "options": ["1", "2", "3", "4", "5"] },
+    { "key": "gps", "label": "Posición GPS", "type": "text", "placeholder": "Ej: -34.8923, -57.9234" },
+    { "key": "codigo_tela", "label": "Código de tela", "type": "text" },
+    { "key": "tipo_tela", "label": "Tipo de tela", "type": "select", "options": ["Orbicular", "Lámina", "Tubo", "Embudo", "Irregular", "Sin tela"] },
+    { "key": "cantidad_telas", "label": "Nº de telas", "type": "number" },
+    { "key": "planta", "label": "Planta soporte", "type": "text" },
+    { "key": "notas", "label": "Notas", "type": "textarea" }
+  ]
+}

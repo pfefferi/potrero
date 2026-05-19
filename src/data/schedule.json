@@ -1,0 +1,207 @@
+{
+  "title": "Cronograma — Salida de Campo El Potrero",
+  "dias": [
+    {
+      "dia": "Lunes",
+      "descripcion": "Llegada, colocación de trampas y registro inicial",
+      "actividades": [
+        {
+          "hora": "10:30",
+          "actividad": "Llegada a la reserva. Charla de bienvenida. Explicación actividad.",
+          "general": "Todos los grupos"
+        },
+        {
+          "hora": "Mañana",
+          "actividad": "Colocación de trampas hormigas I (1 estación de 5 platos cada 20 m) + registro de cobertura vegetal + textura del suelo y profundidad del mantillo. Marcar con 1 cinta de color.",
+          "detalleGrupos": [
+            {
+              "grupo": "Grupo 1",
+              "ambiente": "Área protegida",
+              "enfoque": "Puntos 1 al 10 + Variables instrumentales (T°, HR, luminosidad)"
+            },
+            {
+              "grupo": "Grupo 2",
+              "ambiente": "Eucalipto joven",
+              "enfoque": "Puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 3",
+              "ambiente": "Eucalipto intermedio",
+              "enfoque": "Puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 4",
+              "ambiente": "Eucalipto maduro",
+              "enfoque": "Puntos 1 al 10"
+            }
+          ]
+        },
+        {
+          "hora": "Mediodía",
+          "actividad": "Almuerzo",
+          "general": "Todos los grupos"
+        },
+        {
+          "hora": "Tarde",
+          "actividad": "Colecta hormigas I + completar registros pendientes. Instalación de campamento. Comienzo identificación bajo lupa.",
+          "detalleGrupos": [
+            {
+              "grupo": "Grupos 3 y 4",
+              "ambiente": "Según corresponda",
+              "enfoque": "Registro de variables instrumentales adicional"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dia": "Martes",
+      "descripcion": "Muestreo completo con rotación — aves, arañas, hongos, hormigas II",
+      "actividades": [
+        {
+          "hora": "Mañana",
+          "actividad": "Relevamiento de aves I + arañas I + cobertura vegetal por estrato. Puntos cada 150 m, marcar con 2 cintas. Telas en bandas-transecta 5×2×2 m, rociar con fumigador.",
+          "nota": "⚠️ En cada punto: primero aves (necesitan silencio), luego telas de araña",
+          "detalleGrupos": [
+            {
+              "grupo": "Grupo 4",
+              "ambiente": "Área protegida",
+              "enfoque": "Aves + arañas + cobertura, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 1",
+              "ambiente": "Eucalipto joven",
+              "enfoque": "Aves + arañas + cobertura, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 2",
+              "ambiente": "Eucalipto intermedio",
+              "enfoque": "Aves + arañas + cobertura, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 3",
+              "ambiente": "Eucalipto maduro",
+              "enfoque": "Aves + arañas + cobertura, puntos 1 al 10"
+            }
+          ]
+        },
+        {
+          "hora": "Mediodía",
+          "actividad": "Colocación de trampas hormigas II (puntos ya marcados). Relevamiento de hongos sobre transecta de hormigas.",
+          "detalleGrupos": [
+            {
+              "grupo": "Grupo 3",
+              "ambiente": "Área protegida",
+              "enfoque": "Hongos + hormigas II, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 4",
+              "ambiente": "Eucalipto joven",
+              "enfoque": "Hongos + hormigas II, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 1",
+              "ambiente": "Eucalipto intermedio",
+              "enfoque": "Hongos + hormigas II + Variables instrumentales, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 2",
+              "ambiente": "Eucalipto maduro",
+              "enfoque": "Hongos + hormigas II, puntos 1 al 10"
+            }
+          ]
+        },
+        {
+          "hora": "Tarde",
+          "actividad": "Colecta de hormigas (después de 1 hora) + Variables instrumentales (grupos 3 y 4). Identificación de hormigas a la lupa.",
+          "detalleGrupos": [
+            {
+              "grupo": "Grupos 3 y 4",
+              "ambiente": "Según corresponda",
+              "enfoque": "Variables instrumentales adicionales"
+            }
+          ]
+        },
+        {
+          "hora": "Noche",
+          "actividad": "Cena de camaradería: asado 🥩",
+          "general": "Todos los grupos"
+        }
+      ]
+    },
+    {
+      "dia": "Miércoles",
+      "descripcion": "Último día — segundo relevamiento de aves y arañas, regreso",
+      "actividades": [
+        {
+          "hora": "Mañana",
+          "actividad": "Relevamiento de aves II + telas de arañas II (línea paralela a 4 m del día anterior). No se releeve vegetación, se usa lo del martes.",
+          "detalleGrupos": [
+            {
+              "grupo": "Grupo 2",
+              "ambiente": "Área protegida",
+              "enfoque": "Aves + arañas II, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 3",
+              "ambiente": "Eucalipto joven",
+              "enfoque": "Aves + arañas II, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 4",
+              "ambiente": "Eucalipto intermedio",
+              "enfoque": "Aves + arañas II, puntos 1 al 10"
+            },
+            {
+              "grupo": "Grupo 1",
+              "ambiente": "Eucalipto maduro",
+              "enfoque": "Aves + arañas II, puntos 1 al 10"
+            }
+          ]
+        },
+        {
+          "hora": "Mediodía",
+          "actividad": "Continuar identificación de hormigas a la lupa (si no se completó)",
+          "general": "Todos los grupos"
+        },
+        {
+          "hora": "14:00",
+          "actividad": "Regreso a Buenos Aires 🚌",
+          "general": "Todos los grupos"
+        }
+      ]
+    }
+  ],
+  "ambientes": [
+    {
+      "id": "protegido",
+      "nombre": "Área protegida",
+      "descripcion": "Bosque nativo"
+    },
+    {
+      "id": "eucalipto-joven",
+      "nombre": "Plantación joven",
+      "descripcion": "Plantación reciente de eucalipto"
+    },
+    {
+      "id": "eucalipto-intermedio",
+      "nombre": "Plantación intermedia",
+      "descripcion": "Plantación de eucalipto en desarrollo"
+    },
+    {
+      "id": "eucalipto-maduro",
+      "nombre": "Plantación madura",
+      "descripcion": "Plantación de eucalipto establecida"
+    }
+  ],
+  "grupos": ["Grupo 1", "Grupo 2", "Grupo 3", "Grupo 4"],
+  "notas": [
+    "Marcar puntos de hormigas con 1 cinta de color",
+    "Marcar puntos de aves/arañas con 2 cintas de color (para diferenciar)",
+    "Puntos de hormigas: cada 20 metros",
+    "Puntos de aves/arañas: cada 150 metros",
+    "Bandas-transecta arañas: 5m largo × 2m ancho × 2m alto, rociar con fumigador",
+    "Colocar palitos de truco en cada individuo de cada especie que ven",
+    "Completar posición GPS de cada punto"
+  ]
+}

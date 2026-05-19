@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Bagre amarillo",
+    "nombreCient": "Chthonerpeton indistinctum",
+    "notas": "Guía p.113"
+  },
+  {
+    "nombre": "Dorado",
+    "nombreCient": "Prochilodus lineatus",
+    "notas": "Guía p.113"
+  },
+  {
+    "nombre": "Sábalo",
+    "nombreCient": "Salminus brasiliensis",
+    "notas": "Guía p.113"
+  },
+  {
+    "nombre": "Tararira",
+    "nombreCient": "Hoplias malabaricus",
+    "notas": "Guía p.114"
+  }
+]
