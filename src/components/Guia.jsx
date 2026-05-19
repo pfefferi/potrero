@@ -7,7 +7,7 @@ import pecesData from '../data/species/peces.json';
 import floraData from '../data/species/flora.json';
 import exoticosData from '../data/species/exoticos.json';
 import { getSightings, addSighting, removeLastSighting, updateSightingNote, clearChecklist, getAllSightingsForExport } from '../db';
-import { getGPS } from '../gps';
+import { gpsTrack } from '../gps';
 
 const grupos = {
   aves: { icon: '🐦', titulo: 'Aves', lista: avesData },
@@ -37,8 +37,7 @@ export default function Guia() {
   const [expandedSpecies, setExpandedSpecies] = useState(null);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [noteEdits, setNoteEdits] = useState({});
-  const [gpsLoading, setGpsLoading] = useState(null); // species key while GPS fetches
-  const gpsCache = useRef(null);
+  const [liveGps, setLiveGps] = useState(() => gpsTrack.getLatest());
 
   // Load sightings from IndexedDB
   useEffect(() => {
@@ -48,21 +47,15 @@ export default function Guia() {
   const grupo = grupos[grupoActivo];
   const grupoKey = grupoActivo;
 
-  // Quick GPS — cached for 60s
-  const quickGPS = async () => {
-    const now = Date.now();
-    if (gpsCache.current && now - gpsCache.current.ts < 60000) return gpsCache.current.pos;
-    const pos = await getGPS();
-    gpsCache.current = { pos, ts: now };
-    return pos;
-  };
+  // Subscribe to live GPS updates
+  useEffect(() => {
+    return gpsTrack.subscribe(pos => setLiveGps(pos));
+  }, []);
 
-  // Add a new sighting
+  // Add a new sighting — uses latest GPS from background tracking
   const handleAddSighting = async (especie) => {
     const key = `${grupoKey}:${especie.index}`;
-    setGpsLoading(key);
-    const gps = await quickGPS();
-    setGpsLoading(null);
+    const gps = gpsTrack.getLatest();
     await addSighting(key, gps, '');
     setSightings(prev => {
       const existing = prev[key] || [];
@@ -283,9 +276,7 @@ export default function Guia() {
                     disabled={isLoadingGps}
                   >
                     <div className="especie-check">
-                      {isLoadingGps ? (
-                        <span className="gps-spinner">📡</span>
-                      ) : hasSightings ? (
+                      {hasSightings ? (
                         <span className="check-badge">{regs.length}👁️</span>
                       ) : (
                         <span className="check-icon">➕</span>

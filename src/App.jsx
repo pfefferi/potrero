@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Cronograma from './components/Cronograma';
 import Claves from './components/Claves';
 import Guia from './components/Guia';
 import Planillas from './components/Planillas';
 import Proyectos from './components/Proyectos';
+import { gpsTrack } from './gps';
 import './App.css';
 
 const tabs = [
@@ -22,6 +23,11 @@ function App() {
   const [grupo, setGrupo] = useState(() => {
     return localStorage.getItem('potrero-grupo') || '';
   });
+  const [gpsStatus, setGpsStatus] = useState(() => gpsTrack.getLatest() ? 'on' : 'off');
+
+  useEffect(() => {
+    return gpsTrack.subscribe(pos => setGpsStatus(pos ? 'on' : 'off'));
+  }, []);
 
   const toggleTema = () => {
     const nuevo = tema === 'claro' ? 'oscuro' : 'claro';
@@ -48,6 +54,9 @@ function App() {
           <button className="theme-toggle" onClick={toggleTema} aria-label="Cambiar tema">
             {tema === 'claro' ? '🌙' : '☀️'}
           </button>
+          <span className={`gps-indicator ${gpsStatus === 'on' ? 'active' : ''}`} title="GPS">
+            {gpsStatus === 'on' ? '📍' : '📍'}
+          </span>
         </div>
 
         {!grupo && tab === 'hoy' && (

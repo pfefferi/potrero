@@ -101,6 +101,17 @@
   transition: background 0.2s;
 }
 
+/* ── GPS Indicator ── */
+.gps-indicator {
+  font-size: 0.9rem;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.gps-indicator.active {
+  opacity: 1;
+}
+
 .theme-toggle:hover {
   background: var(--primary-light);
 }
