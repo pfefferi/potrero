@@ -1,0 +1,18 @@
+{
+  "name": "Compañera de Campo — El Potrero",
+  "short_name": "El Potrero",
+  "description": "App offline para la salida de campo a El Potrero — Ecología General, UNLP",
+  "start_url": "/potrero/",
+  "display": "standalone",
+  "background_color": "#f7f5f0",
+  "theme_color": "#2d7d46",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/potrero/icons.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

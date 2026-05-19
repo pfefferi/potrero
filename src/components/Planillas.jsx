@@ -103,9 +103,18 @@ function FormRenderer({ schema, formId }) {
   const [entryPhotos, setEntryPhotos] = useState({});
   const [showSaved, setShowSaved] = useState(false);
 
-  // Load saved entries on mount
+  // Load saved entries + their photos on mount
   useEffect(() => {
-    getEntries(formId).then(setEntries);
+    getEntries(formId).then(async (loaded) => {
+      setEntries(loaded);
+      // Load photo counts for each entry
+      const photosMap = {};
+      for (const entry of loaded) {
+        const photos = await getPhotosForEntry(entry.id);
+        photosMap[entry.id] = photos;
+      }
+      setEntryPhotos(photosMap);
+    });
   }, [formId]);
 
   const handleChange = (key, val) => {
