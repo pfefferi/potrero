@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import avesData from '../data/species/aves.json';
 import mamiferosData from '../data/species/mamiferos.json';
 import reptilesData from '../data/species/reptiles.json';
@@ -37,7 +37,6 @@ export default function Guia() {
   const [expandedSpecies, setExpandedSpecies] = useState(null);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [noteEdits, setNoteEdits] = useState({});
-  const [liveGps, setLiveGps] = useState(() => gpsTrack.getLatest());
 
   // Load sightings from IndexedDB
   useEffect(() => {
@@ -46,11 +45,6 @@ export default function Guia() {
 
   const grupo = grupos[grupoActivo];
   const grupoKey = grupoActivo;
-
-  // Subscribe to live GPS updates
-  useEffect(() => {
-    return gpsTrack.subscribe(pos => setLiveGps(pos));
-  }, []);
 
   // Add a new sighting — uses latest GPS from background tracking
   const handleAddSighting = async (especie) => {
