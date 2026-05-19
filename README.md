@@ -1,6 +1,6 @@
 # Potrero — Compañera de Campo
 
-> Aplicación offline para la salida de campo a El Potrero (Ecología General, UNLP).
+> Aplicación offline para la salida de campo a El Potrero (Ecología de Comunidades, UBA).
 
 **Documentación completa:** → [PROJECT.md](./PROJECT.md)
 

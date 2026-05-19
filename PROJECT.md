@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Aplicación web **100% offline-first** para la salida de campo a la Reserva Experimental El Potrero (Cátedra de Ecología General, UNLP). Los alumnos trabajan durante 3 días en 4 ambientes estudiando 5 grupos taxonómicos. La app reemplaza las planillas de papel, provee guías de identificación y toda la información de campo sin necesidad de conexión a internet.
+Aplicación web **100% offline-first** para la salida de campo a la Reserva Experimental El Potrero (Cátedra de Ecología de Comunidades, UBA). Los alumnos trabajan durante 3 días en 4 ambientes estudiando 5 grupos taxonómicos. La app reemplaza las planillas de papel, provee guías de identificación y toda la información de campo sin necesidad de conexión a internet.
 
 ## Origen de los datos
 

@@ -48,7 +48,7 @@ function App() {
             <span className="header-icon">🌿</span>
             <div>
               <h1>Compañera de Campo</h1>
-              <span className="header-sub">El Potrero — Ecología General, UNLP</span>
+              <span className="header-sub">El Potrero — Ecología de Comunidades, UBA</span>
             </div>
           </div>
           <button className="theme-toggle" onClick={toggleTema} aria-label="Cambiar tema">

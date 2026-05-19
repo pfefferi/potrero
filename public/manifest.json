@@ -1,7 +1,7 @@
 {
   "name": "Compañera de Campo — El Potrero",
   "short_name": "El Potrero",
-  "description": "App offline para la salida de campo a El Potrero — Ecología General, UNLP",
+  "description": "App offline para la salida de campo a El Potrero — Ecología de Comunidades, UBA",
   "start_url": "/potrero/",
   "display": "standalone",
   "background_color": "#f7f5f0",
