@@ -1134,25 +1134,28 @@
   background: rgba(255,255,255,0.15);
 }
 
-/* ── Species Card with Check ── */
-.especie-card {
+/* ── Species Card (Guía) ── */
+.especie-main {
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  text-align: left;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  transition: all 0.2s;
 }
 
 .especie-card.visto {
-  opacity: 0.6;
   background: var(--primary-light);
   border-color: var(--primary);
 }
 
 .app.oscuro .especie-card.visto {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .especie-check {
@@ -1165,7 +1168,44 @@
 }
 
 .check-icon {
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+.check-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--primary);
+  color: white;
+  padding: 0.1rem 0.35rem;
+  border-radius: 999px;
+}
+
+.gps-spinner {
+  font-size: 0.9rem;
+  animation: pulse 0.8s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.especie-expand {
+  display: block;
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.25rem;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-align: center;
+}
+
+.especie-expand:hover {
+  color: var(--primary);
 }
 
 .especie-info {
@@ -1181,9 +1221,116 @@
   flex-wrap: wrap;
 }
 
+.especie-ultima {
+  font-size: 0.65rem;
+  color: var(--primary);
+  font-weight: 500;
+}
 
+/* ── Sighting List ── */
+.sighting-list {
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
 
-/* ── Guía Actions ── */
+.sighting-item {
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.6rem;
+  font-size: 0.78rem;
+}
+
+.sighting-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.sighting-num {
+  background: var(--primary);
+  color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sighting-time {
+  flex: 1;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.sighting-undo {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+}
+
+.sighting-undo:hover {
+  background: rgba(198, 40, 40, 0.1);
+  color: var(--danger);
+}
+
+.sighting-gps {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.gps-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.68rem;
+}
+
+.gps-link:hover {
+  text-decoration: underline;
+}
+
+.sighting-note {
+  margin-top: 0.25rem;
+}
+
+.note-input {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  background: var(--bg-card);
+  color: var(--text);
+  font-family: inherit;
+}
+
+.note-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+.note-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ── Guía Actions ──
 .guia-actions {
   margin-bottom: 0.75rem;
   display: flex;

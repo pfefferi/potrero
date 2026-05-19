@@ -1,6 +1,6 @@
 // Simple IndexedDB wrapper for potrero field entries + photos
 const DB_NAME = 'potrero-db';
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 const STORE_ENTRIES = 'entries';
 const STORE_PHOTOS = 'photos';
 const STORE_CHECKLIST = 'checklist';
@@ -10,6 +10,7 @@ function openDB() {
     const req = indexedDB.open(DB_NAME, DB_VERSION);
     req.onupgradeneeded = (event) => {
       const db = req.result;
+      const oldVersion = event.oldVersion;
       if (!db.objectStoreNames.contains(STORE_ENTRIES)) {
         const store = db.createObjectStore(STORE_ENTRIES, { keyPath: 'id' });
         store.createIndex('formId', 'formId', { unique: false });
@@ -21,6 +22,20 @@ function openDB() {
       }
       if (!db.objectStoreNames.contains(STORE_CHECKLIST)) {
         db.createObjectStore(STORE_CHECKLIST);
+      }
+      // v2→v3: migrate simple toggle to multi-sighting array
+      if (oldVersion < 3) {
+        const tx = req.transaction;
+        const store = tx.objectStore(STORE_CHECKLIST);
+        const getAll = store.getAll();
+        getAll.onsuccess = () => {
+          getAll.result.forEach(item => {
+            if (item.value && item.value.visto && !Array.isArray(item.value)) {
+              // Migrate: {visto, timestamp} → [{timestamp, gps, nota}]
+              store.put([{ timestamp: item.value.timestamp, gps: null, nota: '' }], item.key);
+            }
+          });
+        };
       }
     };
     req.onsuccess = () => resolve(req.result);
@@ -112,34 +127,90 @@ export async function photoToUrl(photo) {
   });
 }
 
-// ── Checklist ──
-// Key: "{grupo}:{index}" → { visto: true, timestamp: "..." }
-export async function getChecklist() {
+// ── Checklist (multi-sighting) ──
+// Key: "{grupo}:{index}" → Array of sightings
+// Each sighting: { timestamp, gps: { lat, lng } | null, nota: '' }
+export async function getSightings() {
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const tx = db.transaction(STORE_CHECKLIST, 'readonly');
     const req = tx.objectStore(STORE_CHECKLIST).getAll();
     req.onsuccess = () => {
       const result = {};
-      req.result.forEach(item => { result[item.key] = item.value; });
+      req.result.forEach(item => { result[item.key] = Array.isArray(item.value) ? item.value : (item.value ? [item.value] : []); });
       resolve(result);
     };
     req.onerror = () => reject(req.error);
   });
 }
 
-export async function toggleChecklistItem(key, value) {
+export async function addSighting(key, gps = null, nota = '') {
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const tx = db.transaction(STORE_CHECKLIST, 'readwrite');
-    if (value) {
-      tx.objectStore(STORE_CHECKLIST).put(value, key);
-    } else {
-      tx.objectStore(STORE_CHECKLIST).delete(key);
-    }
-    tx.oncomplete = () => resolve();
-    tx.onerror = () => reject(tx.error);
+    const store = tx.objectStore(STORE_CHECKLIST);
+    const getReq = store.get(key);
+    getReq.onsuccess = () => {
+      const existing = Array.isArray(getReq.result) ? getReq.result : [];
+      const sighting = { timestamp: new Date().toISOString(), gps, nota };
+      store.put([...existing, sighting], key);
+      tx.oncomplete = () => resolve(sighting);
+      tx.onerror = () => reject(tx.error);
+    };
+    getReq.onerror = () => reject(getReq.error);
   });
+}
+
+export async function removeLastSighting(key) {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE_CHECKLIST, 'readwrite');
+    const store = tx.objectStore(STORE_CHECKLIST);
+    const getReq = store.get(key);
+    getReq.onsuccess = () => {
+      const existing = Array.isArray(getReq.result) ? getReq.result : [];
+      if (existing.length <= 1) {
+        store.delete(key);
+      } else {
+        store.put(existing.slice(0, -1), key);
+      }
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+    };
+    getReq.onerror = () => reject(getReq.error);
+  });
+}
+
+export async function updateSightingNote(key, sightingIndex, nota) {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE_CHECKLIST, 'readwrite');
+    const store = tx.objectStore(STORE_CHECKLIST);
+    const getReq = store.get(key);
+    getReq.onsuccess = () => {
+      const existing = Array.isArray(getReq.result) ? [...getReq.result] : [];
+      if (existing[sightingIndex]) {
+        existing[sightingIndex].nota = nota;
+        store.put(existing, key);
+      }
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+    };
+    getReq.onerror = () => reject(getReq.error);
+  });
+}
+
+export async function getAllSightingsForExport() {
+  const sightings = await getSightings();
+  const rows = [];
+  for (const [key, arr] of Object.entries(sightings)) {
+    const [grupoStr, indexStr] = key.split(':');
+    const index = parseInt(indexStr);
+    for (const s of arr) {
+      rows.push({ grupo: grupoStr, index, ...s });
+    }
+  }
+  return rows;
 }
 
 export async function clearChecklist() {
