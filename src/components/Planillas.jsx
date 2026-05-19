@@ -13,6 +13,81 @@ import {
   deletePhoto,
   photoToUrl
 } from '../db';
+import { gpsTrack } from '../gps';
+
+// Map form id → which day(s) each group does which environment
+// Based on schedule.json
+const groupEnvironmentMap = {
+  hormigas: {
+    0: { 1: 'Área protegida', 2: 'Plantación joven', 3: 'Plantación intermedia', 4: 'Plantación madura' }, // Lunes
+    1: { 3: 'Área protegida', 4: 'Plantación joven', 1: 'Plantación intermedia', 2: 'Plantación madura' }, // Martes mediodía
+  },
+  aves: {
+    1: { 4: 'Área protegida', 1: 'Plantación joven', 2: 'Plantación intermedia', 3: 'Plantación madura' }, // Martes mañana
+    2: { 2: 'Área protegida', 3: 'Plantación joven', 4: 'Plantación intermedia', 1: 'Plantación madura' }, // Miércoles
+  },
+  aranas: {
+    1: { 4: 'Área protegida', 1: 'Plantación joven', 2: 'Plantación intermedia', 3: 'Plantación madura' }, // Martes mañana
+    2: { 2: 'Área protegida', 3: 'Plantación joven', 4: 'Plantación intermedia', 1: 'Plantación madura' }, // Miércoles
+  },
+  hongos: {
+    1: { 3: 'Área protegida', 4: 'Plantación joven', 1: 'Plantación intermedia', 2: 'Plantación madura' }, // Martes mediodía
+  },
+  ambientales: {
+    0: { 1: 'Área protegida', 2: 'Plantación joven', 3: 'Plantación intermedia', 4: 'Plantación madura' }, // Lunes
+    1: { 3: 'Área protegida', 4: 'Plantación joven', 1: 'Plantación intermedia', 2: 'Plantación madura' }, // Martes tarde
+  },
+};
+
+function todayDayIndex() {
+  // 0=Mon, 1=Tue, 2=Wed
+  const day = new Date().getDay(); // 0=Sun, 1=Mon...
+  if (day >= 1 && day <= 3) return day - 1;
+  return 0;
+}
+
+function getDefaultValues(schema) {
+  const defaults = Object.fromEntries(schema.fields.map(f => [f.key, '']));
+  const grupo = localStorage.getItem('potrero-grupo') || '';
+  const grupoNum = grupo ? parseInt(grupo.replace('Grupo ', '')) : null;
+
+  // Today's date
+  const today = new Date().toISOString().slice(0, 10);
+  defaults.fecha = today;
+
+  // Grupo
+  if (grupoNum && schema.fields.find(f => f.key === 'grupo')) {
+    defaults.grupo = String(grupoNum);
+  }
+
+  // Current time for hora_inicio
+  if (schema.fields.find(f => f.key === 'hora_inicio')) {
+    const now = new Date();
+    defaults.hora_inicio = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+  }
+
+  // Current time for hora_fin (same for now, user can adjust)
+  if (schema.fields.find(f => f.key === 'hora_fin')) {
+    defaults.hora_fin = defaults.hora_inicio;
+  }
+
+  // Auto-detect ambiente from schedule based on day + group + experiment type
+  if (grupoNum) {
+    const dayIdx = todayDayIndex();
+    const expMap = groupEnvironmentMap[schema.id];
+    if (expMap && expMap[dayIdx] && expMap[dayIdx][grupoNum]) {
+      defaults.ambiente = expMap[dayIdx][grupoNum];
+    }
+  }
+
+  // GPS from live tracking
+  const gps = gpsTrack.getLatest();
+  if (gps && schema.fields.find(f => f.key === 'gps')) {
+    defaults.gps = `${gps.lat}, ${gps.lng}`;
+  }
+
+  return defaults;
+}
 
 const formSchemas = {
   hormigas: antsSchema,
@@ -95,9 +170,7 @@ async function compressImage(file) {
 }
 
 function FormRenderer({ schema, formId }) {
-  const [values, setValues] = useState(
-    Object.fromEntries(schema.fields.map(f => [f.key, '']))
-  );
+  const [values, setValues] = useState(() => getDefaultValues(schema));
   const [entries, setEntries] = useState([]);
   const [expandedEntry, setExpandedEntry] = useState(null);
   const [entryPhotos, setEntryPhotos] = useState({});
@@ -107,7 +180,6 @@ function FormRenderer({ schema, formId }) {
   useEffect(() => {
     getEntries(formId).then(async (loaded) => {
       setEntries(loaded);
-      // Load photo counts for each entry
       const photosMap = {};
       for (const entry of loaded) {
         const photos = await getPhotosForEntry(entry.id);
@@ -115,6 +187,11 @@ function FormRenderer({ schema, formId }) {
       }
       setEntryPhotos(photosMap);
     });
+  }, [formId]);
+
+  // Reset to defaults when switching forms
+  useEffect(() => {
+    setValues(getDefaultValues(schema));
   }, [formId]);
 
   const handleChange = (key, val) => {
@@ -133,18 +210,33 @@ function FormRenderer({ schema, formId }) {
     setEntries(prev => [...prev, entry]);
     setEntryPhotos(prev => ({ ...prev, [entry.id]: [] }));
 
-    // Reset only per-observation fields
+    // Refresh auto-fields after adding
+    const now = new Date();
+    const currentTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+    const gps = gpsTrack.getLatest();
+
+    const refresh = {};
+    // Update time fields
+    if (schema.fields.find(f => f.key === 'hora_fin')) {
+      refresh.hora_fin = currentTime;
+    }
+    // Refresh GPS
+    if (gps && schema.fields.find(f => f.key === 'gps')) {
+      refresh.gps = `${gps.lat}, ${gps.lng}`;
+    }
+
+    // Reset per-observation fields
     const reset = {};
     schema.fields.forEach(f => {
       if (['cantidad', 'especie', 'genero', 'codigo_tela', 'tipo_tela', 'planta',
            'temperatura', 'humedad', 'textura', 'prof_mantillo', 'dist_rio', 'ph',
            'cob_gramineas', 'cob_herbaceas', 'cob_suelo_desnudo', 'cob_hojarasca',
            'cob_enredaderas', 'cob_musgo', 'cob_arbustos', 'cob_canopia',
-           'plato'].includes(f.key)) {
+           'plato', 'comportamiento', 'registro', 'cantidad_telas', 'sustrato'].includes(f.key)) {
         reset[f.key] = '';
       }
     });
-    setValues(prev => ({ ...prev, ...reset }));
+    setValues(prev => ({ ...prev, ...reset, ...refresh }));
   };
 
   const handleDeletePhoto = async (entryId, photoId) => {
